@@ -1,0 +1,863 @@
+/* Css reset  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile website   */
+@media screen and (max-width:540px){
+    .main{
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        width: 100%;
+        height: fit-content;
+        /* border: 2px dashed black; */
+    }
+    .logo{
+        width: fit-content;
+        height: fit-content;
+        /* border: 1px solid green; */
+        margin: 10px auto;
+    }
+    .logo img{
+        width: 98px;
+        height: 100px;
+    }
+    .harmburger{
+        width: 100%;
+        height: 60px;
+        background-color:#037cc5;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        position: sticky;
+        top: 0;
+    }
+    .harmburger img {
+        width: 80px;
+        height: 70px;
+        margin-right: 15px;
+        filter: invert(100%);
+    }
+    /* harmburger end  */
+    /* resp nav  start  */
+    .resp-nav{
+        width: 100%;
+        height: fit-content;
+        background-color: #d72517;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        animation: nav 0.9s 1;
+        display: none;
+        z-index: 1;
+    }
+    @keyframes nav {
+        0%{height: 0px;}
+        100%{height: 300px;}
+    }
+    .resp-nav ul{
+        list-style: none;
+    }
+    .resp-nav ul li{
+        padding: 10px 15px;
+    }
+    .resp-nav ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .crosebtn{
+        width: fit-content;
+        height: fit-content;
+        color: #fff;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+    /* header end  */
+
+
+    /* slider start  */
+    .slider{
+        width: 100%;
+        height: 500px;
+        background-image: url("../Images/slider.png");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider h1{
+        font-size: 53px;
+        color: rgb(146, 19, 19);
+        /* color: #ffffff; */
+        margin: 0 15px 0 15px;
+        font-weight: bolder;
+        text-transform: capitalize;
+        text-shadow: 2px 2px 1px black;
+    }
+    .slider p{
+        font-size: 36px;
+        margin: 10px 15px 0 15px;
+        color: rgb(255, 166, 0);
+        text-shadow: 2px 2px 1px black;
+    }
+    .slider .btn{
+        padding: 10px 29px;
+        margin-top: 10px;
+        background-color: brown;
+        color: #fff;
+        border: none;
+    }
+    /* slider end  */
+
+    /* About school section start  */
+    .aboutSchool{
+        width: 100%;
+        height: fit-content;
+        /* border: 3px dashed rgb(0, 0, 0); */
+    }
+    .aboutSchoolcol1{
+        width: 100%;
+        height: fit-content;
+        margin-top: 70px;
+    }
+    .aboutSchoolcol1 h4{
+        font-size: 24px;
+        margin:0 15px 0 15px;
+        color: #d72517;
+    }
+    .aboutSchoolcol1 .para{
+        font-size: 14px;
+        margin: 10px 15px 0 15px;
+        line-height: 30px;
+    }
+    .aboutSchoolcol1 a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .aboutSchoolcol1 .btn{
+        padding: 8px 40px;
+        margin: 10px 0 10px 15px;
+        border: none;
+        background-color: #037cc5;
+        color: #fff;
+    }
+    .aboutSchoolcol2{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .aboutSchoolcol2 img{
+        width: 90%;
+        height: auto;
+        margin: 0 15px 0 15px;
+    }
+    /* about School section end  */
+
+    /* our management section start  */
+    .ourManagement{
+        width: 100%;
+        height:fit-content;
+        margin-top: 70px;
+        z-index: -1;
+    }
+    .ourManagement h4{
+        color: #d72517;
+        font-size: 22px;
+        margin: 0 15px 0 15px;
+    }
+    .directorCol{
+        width: 200px;
+        height: fit-content;
+        margin: 20px auto;
+    }
+    .directorCol img{
+        width: 98%;
+        height: 140px;
+        border-radius: 22px;
+        display: block;
+        margin: auto;
+    }
+    .aboutDirector{
+        width: 90%;
+        height: fit-content;
+        background-color: rgb(235, 235, 235);
+        margin: 10px auto;
+        border-bottom: 3px solid #d72517;
+    }
+    .aboutDirector h5{
+      font-size: 14px;
+      color: #d72517;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .aboutDirector p{
+        text-align: center;
+        padding-top: 10px;
+        color: black;
+        font-size: 13px;
+    }
+    .aboutDirector .btn{
+        padding: 8px 40px;
+        background-color: #037cc5;
+        color: #fff;
+        border: none;
+        font-size: 13px;
+        margin: 10px auto;
+        display: block;
+    }
+    .aboutDirector a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .ManagerCol{
+        width: 200px;
+        height: fit-content;
+        margin: 30px auto;
+    }
+    .ManagerCol img{
+        width: 98%;
+        height: 140px;
+        border-radius: 22px;
+        display: block;
+        margin: auto;
+    }
+    .aboutManager{
+        width: 90%;
+        height: fit-content;
+        background-color: rgb(235, 235, 235);
+        margin: 10px auto;
+        border-bottom: 3px solid #d72517;
+    }
+    .aboutManager h5{
+      font-size: 14px;
+      color: #d72517;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .aboutManager p{
+        text-align: center;
+        padding-top: 10px;
+        color: black;
+        font-size: 13px;
+    }
+    .aboutManager .btn{
+        padding: 8px 40px;
+        background-color: #037cc5;
+        color: #fff;
+        border: none;
+        font-size: 13px;
+        margin: 10px auto;
+        display: block;
+    }
+    .aboutManager a{
+        text-decoration: none;
+        color: #fff;
+    }
+    /* our management section end  */
+
+
+    /* why choose us section  */
+    .whyChooseUs{
+        width: 100%;
+        height: fit-content;
+        margin-top: 70px;
+    }
+    .whyChooseUs h4{
+        font-size: 22px;
+        color: #d72517;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .whyChooseUs p{
+        text-align: center;
+        margin: 10px 15px 0 15px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .feeStructure{
+        width: 50%;
+        height: 150px;
+        border: 4px solid rgb(189, 189, 189);
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;       
+    }
+    .feeStructure img{
+        width: 60px;
+        height: 50px;
+        /* filter: invert(100%); */
+    }
+    .feeStructure .btn{
+        padding: 8px 30px;
+        background-color: #d72517;
+        color: #ffffff;
+        border: none;
+        display: block;
+        margin: 10px 0;
+        border-radius: 27px;
+    }
+
+    .schoolTiming{
+        width: 50%;
+        height: 150px;
+        border: 4px solid rgb(189, 189, 189);
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        /* background-color: #037cc5; */
+        /* background-image: url("../Images/pexels-artem-beliaikin-1153976.jpg"); */
+        /* background-size: cover; */
+        box-shadow: 2px 2px 1px rgb(252, 251, 251);       
+    }
+    .schoolTiming img{
+        width: 60px;
+        height: 50px;
+        filter: invert(100%);
+        z-index: -4;
+    }
+    .schoolTiming .btn{
+        padding: 8px 30px;
+        background-color: #d72517;
+        color:#ffffff;
+        border: none;
+        display: block;
+        margin: 10px 0;
+        border-radius: 27px;
+    }
+    /* why choose us section end  */
+
+    /* footer start   */
+    footer{
+        width: 100%;
+        height: fit-content;
+        /* background-color: #d72517; */
+        border-top: 4px solid rgb(0, 0, 0);
+        margin-top: 70px;
+    }
+    footer .footer-logo{
+        width: 100%;
+        height: fit-content;
+    }
+    .footer-logo .para{
+        font-size: 14px;
+        line-height: 22px;
+        margin: 10px 15px;
+    }
+    .footer-logo img{
+        width: 98px;
+        height: 100px;
+        display: block;
+        margin: 10px auto;
+    }
+    footer nav {
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    footer nav ul{
+        list-style: none;
+    }
+    footer nav ul li{
+        padding-top: 10px;
+    }
+    footer nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+ .getinTouch{
+     width: 100%;
+     height: fit-content;
+     margin-top: 20px;
+     /* border: 3px solid red; */
+ }
+ .getinTouch h4{
+     font-size: 22px;
+     color: #d72517;
+     text-align: center;
+ }
+ .getinTouch .location{
+     width: 100%;
+     height: fit-content;
+     margin-top: 20px;
+     /* border: 1px solid red; */
+     display: flex;
+     align-items: center;
+ }
+ .getinTouch .location img{
+     width: 30px;
+     height: 30px;
+     /* border: 1px solid red; */
+     margin-left: 15px;
+ }
+ .getinTouch .location .para{
+     font-size: 14px;
+     margin-left: 10px;
+     margin-right: 15px;
+     line-height: 22px;
+ }
+ .phone{
+     width: 100%;
+     height: fit-content;
+     margin-top: 20px;
+     /* border: 1px solid red; */
+     display: flex;
+     align-items: center;
+ }
+ .phone img{
+     width: 30px;
+     height: 30px;
+     margin-left: 15px;
+ }
+ .phone .para{
+     font-size: 14px;
+     margin-left: 10px;
+     line-height: 22px;
+ }
+ .email{
+     width: 100%;
+     height: fit-content;
+     display: flex;
+     align-items: center;
+     margin-top: 20px;
+ }
+ .email img{
+     width: 30px;
+     height: 30px;
+     margin-left: 15px;
+ }
+ .email .para{
+     margin-left: 10px;
+     font-size: 14px;
+ }
+ .time{
+     width: 100%;
+     height: fit-content;
+     margin-top: 20px;
+     display: flex;
+     align-items: center;
+ }
+ .time img{
+     width: 30px;
+     height: 30px;
+     margin-left: 15px;
+ }
+ .time .para{
+     margin-left: 10px;
+     font-size: 14px;
+ }
+ .socialLink{
+     width: 100%;
+     height: fit-content;
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+ }
+ .socialLink a img{
+     width: 30px;
+     height: 30px;
+     margin: 0 10px;
+ }
+ .footerRow2{
+     width: 100%;
+     height: fit-content;
+     background-color: #037cc5;
+     margin-top: 20px;
+     display: flex;
+     align-items: center;
+ }
+ .footerRow2 .para{
+     color: #fff;
+     font-size: 14px;
+     line-height: 22px;
+     margin: 10px 15px 0 15px;
+ }
+ /* footer end  */
+
+ /* New page  */
+ /* director page start  */
+ .directorPage{
+     width: 100%;
+     height: fit-content;
+     margin-top: 70px;
+ }
+ .directorPage h4{
+     margin: 10px 15px 0 15px;
+ }
+ .directorPage img{
+     width: 80%;
+     height: 230px;
+     display: block;
+     margin: 10px 15px 0 15px;
+ }
+ .directorPage .para{
+     font-size: 14px;
+     margin: 10px 15px 0 15px;
+     line-height: 22px;
+ }
+ /* director page section end  */
+ /* New page  */
+ /* secretary page section  */
+ .secretaryPage{
+    width: 100%;
+    height: fit-content;
+    margin-top: 70px;
+}
+.secretaryPage h4{
+    margin: 10px 15px 0 15px;
+}
+.secretaryPage img{
+    width: 80%;
+    height: 230px;
+    display: block;
+    margin: 10px 15px 0 15px;
+}
+.secretaryPage .para{
+    font-size: 14px;
+    margin: 10px 15px 0 15px;
+    line-height: 22px;
+}
+/* secretaryPage end  */
+
+/* New page  */
+/* about US section   */
+.aboutUs{
+    width:100%;
+    height: fit-content;
+    margin-top: 70px;
+}
+.aboutUs h3{
+    font-size: 40px;
+    color: #d72517;
+    /* margin-left: 15px; */
+    text-align: center;
+}
+.schoolImg{
+    width: 100%;
+    height: 210px;
+}
+.schoolImg img{
+    width: 90%;
+    height: 210px;
+    margin: 10px 15px 0 15px;
+}
+.schoolInfo{
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+}
+.schoolInfo h6{
+    font-size: 16px;
+    color: #d72517;
+    margin: 10px 15px 0 15px;
+}
+.schoolInfo h4{
+    font-size: 24px;
+    margin: 10px 15px 0 15px;
+}
+.schoolInfo h4:after{
+    position: relative;
+    content: "";
+    left: 0;
+    right: auto;
+    background-color: #d72517;
+    height: 2px;
+    width: 41%;
+    margin-top: 10px;
+    display: block;
+}
+.schoolInfo .para{
+    font-size: 14px;
+    margin: 10px 15px 0 15px;
+    line-height: 22px;
+}
+/* review section  */
+.reviewSection{
+    width: 100%;
+    height: fit-content;
+    margin-top: 70px;
+}
+.reviewSection h4{
+   font-size: 24px;
+   text-align: center;
+}
+.reviewSection h4:after{
+    position: relative;
+    content: "";
+    left: 0;
+    right: auto;
+    background-color: #d72517;
+    height: 2px;
+    width: 28%;
+    display: block;
+    margin: 10px auto;
+}
+.reviewSectionRow{
+    width: 100%;
+    height: fit-content;
+}
+.FirstReview{
+    width: 85%;
+    height: fit-content;
+    margin: 20px auto;
+    border: 2px solid red;
+    transition: 0.4s;
+}
+.FirstReview .para{
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px 15px 0 15px;
+}
+.FirstReview .parents{
+    width: 100%;
+    height: 22px;
+    /* border: 1px solid red; */
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+    padding-right:15px;
+}
+
+.secondReview{
+    width: 85%;
+    height: fit-content;
+    margin: 20px auto;
+    border: 2px solid red;
+    transition: 0.4s;
+}
+.FirstReview:hover{
+    background-color: #037cc5;
+    color: #fff;
+}
+.secondReview:hover{
+    background-color: #037cc5;
+    color: #fff;
+}
+.secondReview .para{
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px 15px 0 15px;
+}
+.secondReview .parents{
+    width: 100%;
+    height: 22px;
+    /* border: 1px solid red; */
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+    padding-right:15px;
+}
+/* about us page end  */
+
+/* New page  */
+/* Gallery section  */
+.gallerySection{
+    width: 100%;
+    height: fit-content;
+    /* border: 4px solid black; */
+    margin-top: 70px;
+}
+.gallerySection h3{
+    font-size: 40px;
+    color: #d72517;
+    /* margin-left: 15px; */
+    text-align: center;
+}
+.galleryRow{
+    width: 100%;
+    height: fit-content;
+}
+.galleryRow .gallery{
+    width: 85%;
+    height: 200px;
+    margin: 20px auto;
+}
+.galleryRow .gallery img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+/* gallery section end  */
+
+/* New page  */
+/* Staff section  */
+.staffSection{
+    width: 100%;
+    margin-top: 70px;
+    height: fit-content;
+}
+.staffSection h3{
+    font-size: 40px;
+    color: #d72517;
+    margin: 0 15px;
+}
+.staffRow{
+    width: 100%;
+    height: fit-content;
+}
+.staffRow .staff{
+    width: 60%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    border-bottom: 3px solid red;
+}
+.staff img{
+    width: 80%;
+    height: 160px;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+
+.staff h6{
+    font-size: 20px;
+    text-align: center;
+    color: #d72517;
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
+.staff .para{
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+    letter-spacing: 2px;
+}
+/* staff section end  */
+
+/* New page  */
+/* activities section  */
+.activitiesSection{
+    width: 100%;
+    height: fit-content;
+    margin-top: 70px;
+}
+.activitiesSection h3{
+    font-size: 40px;
+    color: #d72517;
+    margin: 0 15px;
+}
+.activities{
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+}
+.activities .img{
+    width: 90%;
+    height: 240px;
+    /* background-image: url("../Images/Indivisual\ speech.jpeg"); */
+    background-size: cover;
+    background-position: center ;
+    margin: 10px auto;
+    transition: 0.4s;
+}
+.activities .para{
+    font-size: 16px;
+    color: #d72517;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 700;
+}
+.activitiesRow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.activitiesRow #btn1{
+    margin-left: 20px;
+    color: #fff;
+    background-color: #d72517;
+    padding: 7px 23px;
+    border: none;
+    font-weight: bolder;
+    border-radius: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+.activitiesRow #btn2{
+    margin-right: 20px;
+    color: #fff;
+    background-color: #d72517;
+    padding: 7px 23px;
+    border: none;
+    font-weight: bolder;
+    border-radius: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+
+/* New page  */
+/* Fee section   */
+.feeSection{
+    width: 100%;
+    height: fit-content;
+    margin-top: 70px;
+    border: 1px solid red;
+}
+.feeSection h4{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.feeSection .para{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.feeSection  .table{
+    width: 900px;
+    margin: 10px 15px 0 15px;
+    font-size: 14px;
+    overflow-x: auto;
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 0);
+}
+.feeSection .table  th , td{
+    text-align: center;
+    border: 1px solid black;
+}
+.hostelFees{
+    width: 160px;
+    height: fit-content;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.hostelFees h6{
+    font-size: 16px;
+    text-decoration: underline;
+}
+.hostelFeesRow{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.hostelFees .para{
+    font-size: 14px;
+    text-align: left;
+}
+}
+
+.primarycolor{
+    color: #d72517;
+    color: #037cc5;
+}
